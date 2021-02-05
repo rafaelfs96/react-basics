@@ -9,14 +9,16 @@ export default props => {
   function informacoes(nome, idade, nerd) {
     setNome(nome)
     setIdade(idade)
-    setNerd(nerd)    
+    setNerd(nerd)
   }
-  
+
   return (
     <div>
-      <span>{ nome } </span>
-      <span><strong>{ idade }</strong> </span>
-      <span>{ nerd ? 'Verdadeiro' : 'Falso' }</span>
+      <span>{nome} </span>
+      <span>
+        <strong>{idade}</strong>{' '}
+      </span>
+      <span>{nerd ? 'Verdadeiro' : 'Falso'}</span>
       <IndiretaFilho onClick={informacoes}></IndiretaFilho>
     </div>
   )

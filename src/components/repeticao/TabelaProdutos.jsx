@@ -7,10 +7,10 @@ export default props => {
   function getLinhas() {
     return produtos.map((produto, index) => {
       return (
-        <tr key={ produto.id } className={index % 2 === 0 ? 'Par' : 'Impar'}>
-          <td>{ produto.id }</td>
-          <td>{ produto.nome }</td>
-          <td>R${ produto.preco.toFixed(2).replace('.', ',') }</td>
+        <tr key={produto.id} className={index % 2 === 0 ? 'Par' : 'Impar'}>
+          <td>{produto.id}</td>
+          <td>{produto.nome}</td>
+          <td>R${produto.preco.toFixed(2).replace('.', ',')}</td>
         </tr>
       )
     })
@@ -18,18 +18,16 @@ export default props => {
 
   return (
     <div className='TabelaProdutos'>
-        <table>
-          <thead>
-            <tr>
-              <th>id</th>
-              <th>nome</th>
-              <th>preco</th>
-            </tr>
-          </thead>
-          <tbody>
-            { getLinhas() }
-          </tbody>
-        </table>
+      <table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>nome</th>
+            <th>preco</th>
+          </tr>
+        </thead>
+        <tbody>{getLinhas()}</tbody>
+      </table>
     </div>
   )
 }

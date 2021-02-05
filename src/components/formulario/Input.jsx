@@ -10,19 +10,20 @@ export default props => {
 
   return (
     <div className='Input'>
-      <h2>{ valor }</h2>
-      <div style={{
-        display: 'flex',
-        flexDirection: 'column'
-      }}>
+      <h2>{valor}</h2>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column'
+        }}
+      >
         {/* Controlled Component */}
-        <input value={ valor } onChange={onChangeHandler} />
-        <input value={ valor } readOnly />
+        <input value={valor} onChange={onChangeHandler} />
+        <input value={valor} readOnly />
 
         {/* Uncontrolled Component */}
         <input value={undefined} />
       </div>
-      
     </div>
   )
 }

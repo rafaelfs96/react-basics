@@ -26,11 +26,11 @@ class Contador extends Component {
   render() {
     return (
       <div className='Contador'>
-        <Display numero={ this.state.numero } />
+        <Display numero={this.state.numero} />
 
-        <PassoForm passo={ this.state.passo } setPasso={ this.setPasso } />
+        <PassoForm passo={this.state.passo} setPasso={this.setPasso} />
 
-        <Botoes setInc={ this.inc } setDec={ this.dec } />
+        <Botoes setInc={this.inc} setDec={this.dec} />
       </div>
     )
   }
